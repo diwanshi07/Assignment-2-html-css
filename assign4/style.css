@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+  }
+  
+body{
+    background-color: lightslategray;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+li{
+    float:left;
+}
+li:nth-of-type(1){
+    color:lightcoral
+    text-align:center;
+    padding:14px 15px;
+    display:block;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+    
+
+li a{
+   
+    text-decoration: none;
+    color:rgb(248, 247, 238);
+    text-align: center;
+    padding: 20px 15px;
+    display:block;
+    font-size: 20px;
+    border-right: 1px solid gainsboro;
+
+}
+li:last-child{
+    border-left: 1px solid gainsboro;
+    border-right:none;
+}
+li a:hover{
+    background-color:rgb(99, 97, 97);
+}
+@media screen and (max-width:600px){
+     li{
+        width:100%;
+        float:none;
+        text-align: center;
+    }
+}
+
+
+#slider{
+    overflow: hidden;
+    margin-top: 30px;
+}
+#slider figure{
+    position:relative;
+    width:500%;
+    margin:0;
+    left:0;
+    animation:20s slider infinite;
+}
+#slider figure img{
+    width:20%;
+    float:left;
+    height:400px;
+    
+
+}
+@keyframes slider{
+    0% {
+        left:0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    40%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left:-300%;
+    }
+    95%{
+        left:-300%;
+    }
+    100%{
+        left:-400%;
+    }
+
+}
+
+#cards{
+    margin-top: 15px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+}
+#cards div{
+    background-color:gainsboro;
+    border:2px solid black;
+    border-radius: 7px;
+    width:320px;
+    
+    margin:20px 25px;
+    text-align:center;
+    
+}
+
+#cards div img{
+    
+    height:280px;
+    width:300px;
+}
+.header{
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif ;
+    color:black;
+    font-weight: bold;
+}
+.cost{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(22, 2, 2)
+}
+#cards div button{
+    background-color: rgb(49, 37, 37);
+    color:gainsboro;
+    height:40px;
+    width:100px;
+    padding:10px;
+    margin-left:20px;
+    margin-right:20px;
+    margin-bottom: 10px;
+    border:2px solid grey;
+    border-radius:7px;
+   
+}
+#cards div button:hover{
+    background-color: rgb(4, 214, 74);
+    color:black;
+}
+@media screen and (max-width:900px){
+ .items{
+     flex-direction: column;
+     flex-wrap: nowrap;
+     width:100%;
+ }
+}
+.row {  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+/* Sidebar/left column */
+.side {
+    flex: 30%;
+    background-color:#333;
+    padding: 20px;
+    border-radius: 12px;
+    border:2px solid #333;
+  }
+  
+  /* Main column */
+  .main {
+    flex: 70%;
+    background-color:gainsboro;
+    padding: 20px;
+    border-radius: 12px;
+    border:2px solid gainsboro;
+  }
+  
+  /* Fake image, just for this example */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  .footer{
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color:lightcoral;
+      margin-top: 20px;
+      height:150px;
+      align-content:center;
+
+  }
+  
+  .foot{
+      margin:10 20 10 20;
+      border-radius: 6px;
+  }
+
