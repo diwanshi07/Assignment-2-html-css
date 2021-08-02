@@ -1,0 +1,27 @@
+body{
+    background-color: lightcoral;
+    box-sizing: border-box;
+}
+div{
+    
+    display:flex;
+    justify-content:center;
+    align-items: center;
+
+}
+button{
+    width:180px;
+    height:50px;
+    border:5px solid rgb(9, 224, 240);
+    border-radius: 6px;
+    color:ivory;
+    background-color:rgb(49, 16, 16);
+    transition-property: border;
+    transition-duration: 0.5s;
+    margin-top:280px;
+}
+button:hover{
+    width:185px;
+    height:55px;
+    border:5px solid greenyellow;
+}
